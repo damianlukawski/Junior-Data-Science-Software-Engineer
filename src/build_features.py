@@ -2,7 +2,7 @@ import pandas as pd
 
 import sklearn
 
-def execute(input_file, output_file, force_write = True):
+def build_features(input_file, output_file, force_write = True):
     """Builds features
 
     Args:
