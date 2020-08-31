@@ -3,7 +3,7 @@ import pandas as pd
 import sklearn
 import pickle as pkl
 
-    # Split the data for training.
+# Split the data for training.
 df = pd.read_csv("data/train_bf.csv")
 
 y = df["Survived"]
