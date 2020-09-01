@@ -1,52 +1,44 @@
 # Titanic - data science project 
 
 ## INTRODUCTION
-This is simple data science project designed to predict whether a given person would survive the Titanic crash.
+My approach to modeling the probability of surviving a titanic Crash by machine learning.
 
-It is not a ready-made project, but a starting point for You. It has been written without respecting good practices.
+### Python scripts and notebooks
+The repository contains _data_ folder containing 2 data sets in csv file: 
+- _train.csv_ - a dataset for algorithm training
+ - _val.csv_ - a dataset used for modeling
 
-We have come up with 9 tasks for you related to this project. Try to do them all in best possible way. Do not quit if you fail to complete all tasks. We would like to see your project, even if it is only partially ready.
+The repository contains _src_ folder containing 4 python scripts:
+- _preprocess.py_ - cleaning data set, converts train.csv to train_precrocessed.csv and
+val.csv to val_preprocessed.csv
+- _build_features.py_ - selecting useful data and changing data type.
+converts train_preprocessed.csv to train_bf.csv and
+val_preprocessed.csv to val_bf.csv
+- _train.py_ - training algorithm basing on train_bf.csv file
+- _predict.py_ - predicting the result of titanic crash of dataset from val_bf.csv file
 
-Project is written in python, as it is the most usefull to work with us. However, if you are ninja in other language, and want to show off your skills, you can rewrite the code to other language.
+The repository contains _notebook_ folder:
+- 
 
-## TASKS
-Below you will find 9 tasks. Start from the first one. Further tasks can be done in any order you like and it is fine if you skip some of them.
 
-### TASK1 - organizational instructions
- Create your own repository on Github or other public code versioning server. Use content of this project to create initial commit.
- 
- Follow the rules:
-* The solutions to all subsequnt tasks should be in your repository.
-* Each task should be solved in separate branch using any number of commits. You can edit the code or add additional file explaining your way of thinking. The branch name should be related to the task, so we can know which branch applies to which task.
-* All branches should finally be merged to master branch.
-* At the end remember to share your repository with us.
+##### TASK1 - creating a repository
+In the task 1 I created a repository
 
-### TASK2 - sense of humour
+##### TASK2 - sense of humour
 Add a file with your favourite joke to the docs directory.
 
-### TASK3 - good practices
-* Correct the code so it is easy to read, run and reuse.
-* Remember about
-  * README.md files
-  * Code comments
-  * quality and performance of code -- remove or fix badly written code
+##### TASK3 - good practices
+I've corrected the code and tried to clean up the function's descriptions and comments.
+Additionally I've changed a readme file
 
-### TASK4 - feature engineering
-Propose better solution for feature engineering than the one given by us.
+##### TASK6 - measures
+Added a txt file describing the ways how a machine learning algorithm performed.
 
-### TASK5 - models
-Propose other prediction models than the one proposed by us. 
+##### TASK 4,5,7,9 
+To be honest I can't do it... YET! But I'm sure I'll get there. 
+Although I have several years of experience in analysis of scientific data,
+Python programming and especially machine learning are rather new topics to me.
 
-### TASK6 - measures
-After completing TASK5, justify why you have chosen this particular model. Compare it with the model proposed by us or with any other model choosen by you. If you haven't completed TASK5, write theoretically how can you compare two solutions.
+##### TASK8 - measures
 
-### TASK7 - docker
-Prepare a Dockerfile that will allow us to run your code in the container.
-
-### TASK8 - tests
-Write unit tests covering your code.
-
-### TASK9 - prediction api
-Prepare a code that will share your model via API. It should be accessible by the HTTP protocol and accept and return data in JSON format
-
-## GOOD LUCK!!!
+### Thank you for the great opportunity
