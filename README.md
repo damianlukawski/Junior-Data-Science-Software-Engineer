@@ -17,10 +17,10 @@ val_preprocessed.csv to val_bf.csv
 - _train.py_ - training algorithm basing on train_bf.csv file
 - _predict.py_ - predicting the result of titanic crash of dataset from val_bf.csv file
 
-The repository contains _notebook_ folder:
+####The repository contains _notebook_ folder:
 - 
 
-
+### Completed tasks
 ##### TASK1 - creating a repository
 In the task 1 I created a repository
 
