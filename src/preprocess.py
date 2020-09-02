@@ -17,3 +17,4 @@ def preprocess(input_file):
 
     output_file=input_file.split('.')[0]+"_preprocessed.csv"
     data.to_csv(output_file, sep = ";")
+preprocess("C:\\Users\\Damian\\PycharmProjects\\Roche\\Junior-Data-Science-Software-Engineer\\data\\val.csv")

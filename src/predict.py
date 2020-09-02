@@ -1,20 +1,32 @@
 import pandas as pd
 import pickle as pkl
+import preprocess
+import build_features
 
-df = pd.read_csv("data/val_bf.csv")
 
-df.dropna(inplace = True)
+df = pd.read_csv("C:\\Users\\Damian\\PycharmProjects\\Roche\\Junior-Data-Science-Software-Engineer\\data\\val_preprocessed_bf.csv", sep = ";")
 
-target = df["Survived"]
-del(df["Survived"])
-    
-model_unpickle = open("data/model.pkl", 'rb')
-model = pkl.load(model_unpickle)
-model.close()
+y = df["Survived"]
 
-predictions = model.predict(df)
-# Reassign target (if it was present) and predictions.
+with open("C:\\Users\\Damian\\PycharmProjects\\Roche\\Junior-Data-Science-Software-Engineer\\data\\model.pkl", 'rb') as model_unpickle:
+    model = pkl.load(model_unpickle)
+
+
+features = []
+for feature in df.columns:
+    if feature == "Survived" or feature == "Embarked": #or feature == "Unnamed: 0" or feature =="Unnamed: 0.1" :
+        pass
+    else:
+        features.append(feature)
+print(features)
+predictions = model.predict(df[features])
+print(predictions)
 df["prediction"] = predictions
+print(df)
+
+'''
+# Reassign target (if it was present) and predictions.
+
 df["target"] = target
 
 ok = 0
@@ -23,3 +35,4 @@ for i in df.iterrows():
         ok = ok + 1
 
 print("accuracy is", ok / df.shape[0])
+'''

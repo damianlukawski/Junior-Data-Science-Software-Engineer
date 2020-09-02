@@ -4,16 +4,16 @@ import sklearn
 import pickle as pkl
 
 # Split the data for training.
-df = pd.read_csv("data/train_bf.csv")
+df = pd.read_csv("C:\\Users\\Damian\\PycharmProjects\\Roche\\Junior-Data-Science-Software-Engineer\\data\\train_preprocessed_bf.csv", sep = ";")
 
 y = df["Survived"]
 
 features = []
-for c in df.columns:
+for feature in df.columns:
     if feature == "Survived" or feature == "Embarked":
         pass
     else:
-        tr_col.append(c)
+        features.append(feature)
 
 # Create a classifier and select scoring methods.
 from sklearn.ensemble import RandomForestClassifier
@@ -21,12 +21,12 @@ clf = RandomForestClassifier(n_estimators=10)
 
 
 # Fit full model and predict on both train and test.
-clf.fit(df[tr_col], y)
-preds = clf.predict(df[tr_col])
+clf.fit(df[features], y)
+preds = clf.predict(df[features])
 metric_name = "train_accuracy"
 metric_result = sklearn.metrics.accuracy_score(y, preds)
 
-model_pickle = open("data/model.pkl", 'wb')
+model_pickle = open("C:\\Users\\Damian\\PycharmProjects\\Roche\\Junior-Data-Science-Software-Engineer\\data\\model.pkl", 'wb')
 pkl.dump(clf, model_pickle)
 model_pickle.close()
 
