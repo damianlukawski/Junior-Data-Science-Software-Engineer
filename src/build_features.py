@@ -19,6 +19,6 @@ def build_features(input_file):
     df.loc[df["FamilySize"] == 1, "IsAlone"] = 1
     output_file = input_file.split('.')[0] + "_bf.csv"
     df.to_csv(output_file,  sep = ";")
-build_features("C:\\Users\\Damian\\PycharmProjects\\Roche\\Junior-Data-Science-Software-Engineer\\data\\val_preprocessed.csv")
+
 
 
