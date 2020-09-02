@@ -8,9 +8,9 @@ df = pd.read_csv("data/train_bf.csv")
 
 y = df["Survived"]
 
-tr_col = []
+features = []
 for c in df.columns:
-    if c == "Survived":
+    if feature == "Survived" or feature == "Embarked":
         pass
     else:
         tr_col.append(c)
@@ -31,8 +31,5 @@ pkl.dump(clf, model_pickle)
 model_pickle.close()
 
 # Return metrics and model.
-info = ""
-info = info + metric_name
-info = info + " for the model is "
-info = info + str(metric_result)
+info = '%s  for the model is %s' %(metric_name, metric_result)
 print(info)
