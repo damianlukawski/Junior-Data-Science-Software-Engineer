@@ -17,3 +17,5 @@ def preprocess(input_file):
 
     output_file=input_file.split('.')[0]+"_preprocessed.csv"
     data.to_csv(output_file, sep = ";")
+    print (df.head(5))
+    print (df.columns)

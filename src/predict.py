@@ -3,7 +3,8 @@ import pickle as pkl
 import preprocess
 import build_features
 
-def predict(input_file)
+#predicting whether someone survived Titanic crash based on recent training
+def predict(input_file):
     df = pd.read_csv(input_file, sep = ";")
 
     y = df["Survived"]
