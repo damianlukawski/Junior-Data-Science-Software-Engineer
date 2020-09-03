@@ -23,6 +23,13 @@ val_preprocessed.csv to val_bf.csv
 #### TASK1 - creating a repository
 I forked a repository.
 
+
+
+### Completed tasks
+##### TASK1 - creating a repository
+In the task 1 I created a repository
+
+
 #### TASK2 - sense of humour
 I added a _joke.docx_ file with one of my favourite jokes docs directory.
 
