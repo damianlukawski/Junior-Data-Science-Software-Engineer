@@ -1,0 +1,8 @@
+The measurement of model's performance can by done by several statistic functions, divided for regression models and classification models.
+For regression:
+- Root mean squared error -  the quadratic mean of the differences between the predictions made by a model and the actual values
+- Relative Squared Error - normalizes the total squared error of the tested model and divides it by the total squared error of the simple predictor
+- R-squared - the proportion of the variance in the dependent variable that is predictable from the independent variable
+
+For classification (as in Titanic crash model):
+- Confusion Matrix - enables to describe accuracy, precision, sensitivity
