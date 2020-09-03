@@ -38,7 +38,8 @@ I corrected the code and tried to clean up the function's descriptions and comme
 Additionally I changed a readme file
 
 #### TASK6 - measures
-I created a jupyter notebook file showing the idea how the program should work.
+I created a jupyter notebook _main.ipynb_ file showing the idea how the program should work.
+
 
 #### TASK 4,5,7,9 
 To be honest I can't do it... YET! But I'm sure I'll get there. 

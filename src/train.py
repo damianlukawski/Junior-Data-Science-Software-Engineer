@@ -4,7 +4,7 @@ import sklearn
 import pickle as pkl
 
 # Split the data for training.
-def train(input_file)
+def train(input_file):
     df = pd.read_csv(input_file, sep = ";")
 
     y = df["Survived"]

@@ -19,6 +19,8 @@ def build_features(input_file):
     df.loc[df["FamilySize"] == 1, "IsAlone"] = 1
     output_file = input_file.split('.')[0] + "_bf.csv"
     df.to_csv(output_file,  sep = ";")
+    print(df.head(5))
+    print(df.columns)
 
 
 
